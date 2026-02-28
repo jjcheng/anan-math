@@ -1,0 +1,129 @@
+.app-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Enhances button presses for kids */
+.bouncy-btn:active {
+  transform: scale(0.95);
+}
+
+/* Background Scenery */
+.scenery-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #87CEEB 0%, #E0F6FF 60%);
+}
+
+.clouds-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+}
+
+.cloud {
+  position: absolute;
+  font-size: 80px;
+  opacity: 0.8;
+  animation: floatCloud linear infinite;
+}
+
+.cloud-1 { top: 10%; animation-duration: 40s; animation-delay: 0s; }
+.cloud-2 { top: 20%; animation-duration: 60s; animation-delay: -15s; font-size: 60px; }
+.cloud-3 { top: 5%; animation-duration: 45s; animation-delay: -30s; font-size: 100px; }
+.sun {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 100px;
+  animation: rotateSun 20s linear infinite;
+  filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.6));
+}
+
+@keyframes floatCloud {
+  0% { transform: translateX(110vw); }
+  100% { transform: translateX(-20vw); }
+}
+
+@keyframes rotateSun {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.hills-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+}
+
+.hill {
+  position: absolute;
+  border-radius: 50% 50% 0 0;
+}
+
+.hill-back {
+  bottom: -50px;
+  left: -20%;
+  width: 140%;
+  height: 250px;
+  background: #A8E6CF;
+  z-index: 1;
+}
+
+.hill-front {
+  bottom: -50px;
+  right: -20%;
+  width: 120%;
+  height: 200px;
+  background: #73D6B1;
+  z-index: 2;
+}
+
+.trees-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+.tree {
+  position: absolute;
+  font-size: 60px;
+  animation: swayTree 4s ease-in-out infinite alternate;
+  transform-origin: bottom center;
+}
+
+.tree-1 { bottom: 120px; left: 10%; font-size: 80px; }
+.tree-2 { bottom: 150px; right: 20%; font-size: 70px; animation-delay: -1s; }
+.tree-3 { bottom: 100px; right: 5%; font-size: 90px; animation-delay: -2s; }
+.tree-4 { bottom: 180px; left: 30%; font-size: 50px; animation-delay: -3s; }
+
+@keyframes swayTree {
+  0% { transform: rotate(-3deg); }
+  100% { transform: rotate(3deg); }
+}
+
+.animal-friend {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 80px;
+  z-index: 4;
+}
