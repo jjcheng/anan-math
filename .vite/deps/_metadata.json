@@ -2,7 +2,57 @@
   "hash": "e4896cc9",
   "configHash": "f9d068c2",
   "lockfileHash": "83281a3a",
+<<<<<<< Updated upstream
   "browserHash": "5c198d47",
   "optimized": {},
   "chunks": {}
+=======
+  "browserHash": "728c83d6",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "ff6541a6",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "47e0ef5f",
+      "needsInterop": true
+    },
+    "framer-motion": {
+      "src": "../../node_modules/framer-motion/dist/es/index.mjs",
+      "file": "framer-motion.js",
+      "fileHash": "16d5261e",
+      "needsInterop": false
+    },
+    "lucide-react": {
+      "src": "../../node_modules/lucide-react/dist/esm/lucide-react.js",
+      "file": "lucide-react.js",
+      "fileHash": "62c2c844",
+      "needsInterop": false
+    },
+    "react-confetti": {
+      "src": "../../node_modules/react-confetti/dist/react-confetti.mjs",
+      "file": "react-confetti.js",
+      "fileHash": "8b65ca49",
+      "needsInterop": false
+    },
+    "react-use/lib/useWindowSize": {
+      "src": "../../node_modules/react-use/lib/useWindowSize.js",
+      "file": "react-use_lib_useWindowSize.js",
+      "fileHash": "83887153",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-NHNLAWH2": {
+      "file": "chunk-NHNLAWH2.js"
+    },
+    "chunk-HIMZ6MGI": {
+      "file": "chunk-HIMZ6MGI.js"
+    }
+  }
+>>>>>>> Stashed changes
 }
